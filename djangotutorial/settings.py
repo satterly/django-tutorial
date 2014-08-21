@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'polls'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -45,7 +46,6 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'polls'
 )
 
 ROOT_URLCONF = 'djangotutorial.urls'
@@ -65,7 +65,7 @@ DATABASES = {
     },
     'dev': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'djangoseed',
+        'NAME': 'tutorial',
         'USER': 'django',
         'PASSWORD': 'django',
         'HOST': 'localhost',
